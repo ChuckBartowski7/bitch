@@ -1,0 +1,479 @@
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ *behavior: url(boxsizing.htc);
+ --cerchiovw:4vw;
+--marginesinistrio:1.5vw;
+--margine:-1vw;
+--bordersolid:none;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 6.2fr 2fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 7fr;
+    grid-template-rows: 0.4fr 0.4fr 0.8fr;
+    grid-template-areas: ". immagine c1 c2 c3 c4 c5 c6 c7" ". immagine . . . . . . ." ". . testo1 testo2 testo3 testo4 testo5 testo6 testo7";
+     -webkit-column-gap:0px;
+ -moz-column-gap:0px;
+ background-color:#FFF5F5
+    margin-top:5%;
+ margin-left:9%;
+ margin-rigt:9%;
+   
+    border-color:rgba(175,190,193);
+border-width: 1px;
+width:80vw;
+ background-color:#fff5f5;
+
+}
+
+
+.space{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2vw;
+    grid-template-areas: ". immagine c1 c2 c3 c4 c5 c6 " ". immagine . . . . . ." ". . testo1 testo2 testo3 testo4 testo5 testo6";
+    -webkit-column-gap:0px;
+    -moz-column-gap:0px;
+    background-color:#FFF5F5
+    margin-top:2%;
+    margin-left:9%;
+    margin-right:9%;
+    
+    border-color:rgba(175,190,193);
+    border-width: 1px;
+    width:80vw;
+    background-color:#fff5f5;}
+
+
+
+.cerchio1{
+grid-area:c1;
+
+height:3vw;
+width:var(--cerchiovw);
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+    
+   
+    animation-iteration-count: infinite;
+  
+}
+.cerchio1:hover{
+background-image:url("../RESOURCE/cerchio2.png");
+}
+
+@-webkit-keyframes 'home' {
+33%{opacity: 1;}
+66%{opacity: 0.5;}
+100%{opacity: 1;}
+}
+
+.cerchio2{
+grid-area:c2;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+height:3vw;
+width:var(--cerchiovw);
+}
+.cerchio2:hover{
+background-image:url("../RESOURCE/cerchio2.png");
+}
+
+.cerchio3{
+grid-area:c3;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+height:3vw;
+width:var(--cerchiovw);
+}
+.cerchio3:hover{
+background-image:url("../RESOURCE/cerchio2.png");
+}
+
+.cerchio4{
+grid-area:c4;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+height:3vw;
+width:var(--cerchiovw);
+}
+.cerchio4:hover{
+background-image:url("../RESOURCE/cerchio2.png");
+}
+
+.cerchio5{
+grid-area:c5;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+height:3vw;
+width:var(--cerchiovw);
+border-style:var(--Bordigrid);
+}
+.cerchio5:hover{
+background-image:url("../RESOURCE/cerchio2.png");
+}
+
+.cerchio6{
+grid-area:c6;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+height:3vw;
+width:var(--cerchiovw);
+}
+.cerchio6:hover{
+background-image:url("../RESOURCE/cerchio2.png");
+}
+
+.cerchio7{
+grid-area:c7;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+height:3vw;
+width:var(--cerchiovw);
+}
+.cerchio6:hover{
+background-image:url("../RESOURCE/cerchio2.png");
+}
+
+
+.immagine{
+grid-area:immagine;
+background-image:url("../RESOURCE/smile.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    margin-left:-1vw;
+   
+}
+
+.testo1{
+grid-area:testo1;
+border-width:1px;
+font-size:0.7vw;
+margin-left:var(--marginesinistrio);
+margin-top:var(--margine);
+color:rgb(175,110,162);
+
+}
+
+.testo2{
+grid-area:testo2;
+border-width:1px;	
+font-size:0.7vw;
+margin-left:var(--marginesinistrio);
+color:rgb(175,110,162);
+margin-top:var(--margine);
+
+}
+
+.testo3{
+grid-area:testo3;
+border-width:1px;
+font-size:0.7vw;
+margin-left:var(--marginesinistrio);
+color:rgb(175,110,162);
+margin-top:var(--margine);
+
+}
+
+.testo4{
+grid-area:testo4;
+border-width:1px;
+font-size:0.7vw;
+margin-left:var(--marginesinistrio);
+color:rgb(175,110,162);
+margin-top:var(--margine);
+
+}
+
+.testo5{
+grid-area:testo5;
+border-width:1px;
+font-size:0.7vw;
+margin-left:var(--marginesinistrio);
+color:rgb(175,110,162);
+margin-top:var(--margine);
+
+}
+
+.testo6{
+grid-area:testo6;
+border-width:1px;	
+font-size:0.7vw;
+  	margin-left:var(--marginesinistrio);
+  	color:rgb(175,110,162);
+  	margin-top:var(--margine);
+
+}
+
+.testo7{
+grid-area:testo7;
+border-width:1px;	
+font-size:0.7vw;
+  	margin-left:var(--marginesinistrio);
+  	color:rgb(175,110,162);
+  	margin-top:var(--margine);
+
+}
+
+.quadratogrande{
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows:  1fr;
+    grid-template-areas:"centro";
+     -moz-column-gap:0px;
+ margin-left:9%;
+ margin-right:9%;
+
+
+    border-style:var(--bordersolid);
+width:80vw;
+height:50vw;
+background: rgb(238,250,233); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,245,245,1)  35%, rgba(247,250,233,1) 40%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,245,245,1)) 40%,rgba(247,250,233,1) 40%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,245,245,1)  35%,rgba(222,238,211,1) 35%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+
+
+
+}
+
+.centro{
+    display:grid;
+    grid-area:centro;
+    grid-template-columns: 1fr 0.1fr 0.3fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1.4fr 0.7fr 1.75fr 0.1fr;
+    grid-template-areas: ". . . . ." ". cuore1 . cuore2 ." ". intestazione1 immagine1 intestazione2 ." ". immaginesostiene immaginesostiene immaginesostiene ." ". immaginecompleta immaginecompleta immaginecompleta ." "footer footer footer footer footer";
+ border-style:var(--bordersolid);
+
+
+}
+
+.intestazione1{
+width:20vw;
+font-family:fantasy;
+grid-area:intestazione1;
+border-style:var(--bordersolid);
+font-size:0.9vw;
+color:purple;
+
+
+
+
+}
+
+.intestazione2{
+
+font-family:fantasy;
+grid-area:intestazione2;
+
+font-size:0.9vw;
+color:purple;
+margin-right:6%;
+}
+
+
+
+.cuore1{
+grid-area:cuore1;
+background-image:url("../RESOURCE/heartt.png");
+margin-left:8vw;
+width:3vw;
+height:3vw;
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    border-style:var(--bordersolid);
+    animation-name: battiti1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    
+}
+
+.cuore2{
+grid-area:cuore2;
+margin-left:6.2vw;
+width:3vw;
+height:3vw;
+background:url(../RESOURCE/heartt.png);
+    background-size:2.5vw;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    border-style:var(--bordersolid);
+        animation-name: battiti1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes 'battiti1' {
+    
+
+}
+
+.immaginesostiene{
+grid-area:immaginesostiene;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+background-image:url("../RESOURCE/scritta.png");
+    background-size:45vw;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+border-style:var(--bordersolid);
+
+animation-name: textan;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+
+
+
+
+.footer{
+grid-area:footer;
+font-family:cursive;
+background-color:rgba(255,245,245,1);
+   border-style:var(--bordersolid);
+ font-size:1vw;
+   color:purple;
+   text-align:right;
+
+}
+
+.immaginecompleta{
+display:grid;
+grid-area:immaginecompleta;
+grid-template-columns:1fr 1.3fr 1.3fr 1.3fr 1fr;
+grid-template-rows:1fr;
+grid-template-areas:". kid albero panda .";
+   border-style:var(--bordersolid);
+}
+
+.kid{
+grid-area:kid;
+border-style:var(--bordersolid);
+background:url(../RESOURCE/kid.png);
+    background-size:90%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height:13vw;
+    margin-top:7vw;
+}
+
+
+.kid:hover {
+grid-area:kid;
+border-style:var(--bordersolid);
+background:url(../RESOURCE/kidchiuso.png);
+    background-size:90%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+
+.albero{
+grid-area:albero;
+border-style:var(--bordersolid);
+background:url(../RESOURCE/albero.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.albero:hover{
+    transform:scale(1.01);
+    background-position: 0% 100%;}
+
+.panda{
+grid-area:panda;
+border-style:var(--bordersolid);
+background:url(../RESOURCE/panda.png);
+    background-size:101%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+
+.panda:hover{
+
+
+background:url(../RESOURCE/pandachiuso.png);
+    background-size:98%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    animation: animation 0.2s linear infinite;
+    
+}
+.immagine1{
+grid-area:immagine1;
+ display:grid;
+    grid-template-columns:   1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas: ". . ." "sfera1 sfera2 sfera3" ". . .";
+border-style:var(--bordersolid);
+width:7.5vw;
+}
+
+.sfera1{
+grid-area:sfera1;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:1.5vw;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    border-style:var(--bordersolid);
+    
+}
+
+.sfera1:hover{
+    transform:scale(1.1);
+}
+
+
+.sfera2{
+grid-area:sfera2;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:1.5vw;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    border-style:var(--bordersolid);
+}
+
+.sfera2:hover{
+    transform:scale(1.1);
+}
+
+
+.sfera3{
+grid-area:sfera3;
+background-image:url("../RESOURCE/cerchio.png");
+    background-size:1.5vw;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    border-style:var(--bordersolid);
+    animation-name:example;
+    animation-duration:4s;
+}
+
+.sfera3:hover{
+    transform:scale(1.1);
+}
+

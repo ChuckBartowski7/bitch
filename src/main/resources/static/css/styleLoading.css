@@ -1,0 +1,109 @@
+
+body{
+    background-color:white;
+}
+
+.grid-container{
+display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+    grid-template-areas:"cuore";
+    margin:10%;
+}
+
+
+.circle{
+grid-area:cuore;
+display:grid;
+ grid-template-columns:0.1fr;
+    grid-template-rows:0.3fr;
+    grid-template-areas:"animazione";
+width:30vw;
+height:30vw;
+border-style: solid;
+    border-width: 3px;
+    border-radius:100%;
+    margin-left:24vw;
+    border-color:pink;
+ box-shadow: 5px 25px 50px pink;
+    animation-name:alone;
+    animation-duration:2.2s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: alternate;
+   animation-timing-function: linear;
+    
+}
+.testo{
+margin-left:9vw;
+margin-top:2vw;
+font-size:4vw;
+color:pink;
+}
+
+.heart{
+grid-area:animazione;
+   background: rgb(255,255,255) url(../RESOURCE/heart.png) no-repeat;
+background-position:50% 50%;
+    margin-left:7vw;
+    margin-top:6vw;
+    width:16.3vw;
+    height:13vw;
+    animation-name:pulse;
+    animation-duration:0.5s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+background-size:21.5vw;
+
+
+}
+
+@keyframes alone
+{
+    0%{
+        box-shadow: 5px 5px 130px pink;
+    }
+    10%{
+        box-shadow: 2px 2px 50px pink;
+    }
+    20%{
+        box-shadow: 5px 5px 130px pink;
+    }
+    40%{
+        box-shadow: 2px 2px 50px pink;
+    }
+    50%{
+        box-shadow: 5px 5px 130px pink;
+    }
+    60%{
+        box-shadow: 2px 2px 50px pink;
+    }
+    70%{
+        box-shadow: 5px 5px 130px pink;
+    }
+    80%{
+        box-shadow: 2px 2px 50px pink;
+    }
+    90%{
+        box-shadow: 5px 5px 130px pink;
+    }
+    100%{
+        box-shadow: 2px 2px 50px pink;
+    }
+}
+
+@keyframes pulse
+{
+    from{
+        transform:scale(1,1);
+    }
+    to{
+        transform:scale(1.2,1.2);
+    }
+}
+
+
+
+
